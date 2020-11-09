@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+  
+	<servlet>
+		<servlet-name>Responsables</servlet-name>
+		<servlet-class>Servlets.Responsables</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Responsables</servlet-name>
+		<url-pattern>/rsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Villages</servlet-name>
+		<servlet-class>Servlets.Villages</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Villages</servlet-name>
+		<url-pattern>/vlg</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Clients</servlet-name>
+		<servlet-class>Servlets.Clients</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Clients</servlet-name>
+		<url-pattern>/clt</url-pattern>
+	</servlet-mapping>
+	
+	<jsp-config>
+	   <jsp-property-group>
+	       <url-pattern>*.jsp</url-pattern>
+	       <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+	   </jsp-property-group> 
+	</jsp-config>
+	
+</web-app>
